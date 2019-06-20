@@ -1,0 +1,371 @@
+/*RESET CSS BEGIN*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: "Montsserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*RESET CSS END*/
+
+
+/*HELPER CLASS BEGIN*/
+
+img {
+    max-width: 100%;
+}
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 20px 0;
+}
+
+ul li,
+ol li {
+    margin-bottom: 10px;
+}
+
+
+/*HELPER CLASS END*/
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 0;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+/* NAVIGATION STYLING START */
+
+header {
+    z-index: 5;
+
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+body.scroll header.sticky {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+
+}
+
+.nav-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    padding: 7px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+}
+
+nav.nav-wrapper ul li {
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom: 0;
+
+}
+
+.nav-wrapper ul li a {
+    font-size:  17px;
+    line-height: 22px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: 0.34s;
+    transition: 0.34s;
+
+}
+
+.nav-wrapper ul li a:hover {
+    border-bottom: 1px solid white;
+}
+
+header .logo img {
+    max-width: 80px;
+}
+
+/* PARALLAX PAGE STYLES START */
+
+.cover-main {
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1520267819959-5fe7025b9aa8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80') center;
+    backgroud-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+
+ul#scene li.name {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 70px;
+    line-height: 45px;
+    /* text-transform: uppercase; */
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 250px;
+    left: 40px;
+}
+
+ul#scene li.title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    margin-top: 60px;
+    position: absolute;
+    top: 300px;
+    left: 40px;
+
+}
+
+ul#scene li.comment {
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: initial;
+    color: white;
+    width: 100%;
+    margin-top: 60px;
+    position: absolute;
+    top: 380px;
+    left: 40px;
+
+}
+
+ul#scene {
+    margin-top: 100px;
+}
+
+.btn {
+    margin-top: 150px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 400px;
+    left: 40px;
+
+}
+
+.portfolio-btn,
+.contact-btn {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background: transparent;
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+}
+
+.portfolio-btn:hover,
+.contact-btn:hover {
+    background: rgba(255, 255, 255, 0.45);
+    color: rgb(0, 0, 0) ;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.portfolio-btn {
+    margin-right: 30px;
+}
+
+.contanct-btn {
+    margin-left: 30px;
+}
