@@ -1,15 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+</body><!DOCTYPE html>
+<html lang="jn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>alpha-blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alpha-blog</title>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-  <h1>this is about</h1>
-  <%= link_to 'Home', root_path %>
+    <section class="cover-main" id="home">
+        <header>
+            <nav class="nav-wrapper">
+                <div class="logo">
+                    <a href="#"><img src="https://cdn.shopifycloud.com/hatchful-web/assets/d80321286525089fe6b5a5d4759d0efd.svg" alt="logo"></a>
 
+                </div>
+                <ul class="menu">
+                    <li> <a href="#home"><%= link_to 'HOME', root_path %></a></li>
+                    <li> <a href="#about">ABOUT</a></li>
+                    <li> <a href="#services">SERVICES</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    </section>
+
+    <div class="wrapper">
+        <ul id="scene">
+            <li class="layer name"><h2>This is Yuki's about page</li>
+            <li class="layer title">Click "HOME" to go back to home</li>
+            <li class="layer comment">look navigation on upper side of this page</li>
+            <li class="layer btn btn-main">
+                <a href="#" class="portfolio-btn">don't click here</a>
+                <a href="#" class="contact-btn">what is this</a>
+            </li>
+        </ul>
+
+    </div>
 </body>
 </html>
-
+</html>
