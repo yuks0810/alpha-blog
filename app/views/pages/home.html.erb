@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alpha-blog</title>
     <link rel="stylesheet" href="../css/main.css">
+    <%= stylesheet_link_tag 'main' %>
 </head>
 <body>
     <section class="cover-main" id="home">
@@ -18,7 +19,7 @@
                 <ul class="menu">
                     <li> <a href="#home">HOME</a></li>
                     <li> <a href="#about"><%= link_to 'ABOUT', pages_about_path %></a></li>
-                    <li> <a href="#services">SERVICES</a></li>
+                    <li> <a href="#services"><%= link_to "ARTICLE", articles_path %></a></li>
                 </ul>
             </nav>
         </header>
