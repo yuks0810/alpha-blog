@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+  before_action :set_article, only: [:edit, :update, :show, :destroy]
   
   def index
     @articles = Article.all
@@ -9,13 +10,12 @@ class ArticlesController < ApplicationController
   end
   
   def edit
-    @article = Article.find(params[:id])
   end
   
   def create
     @article = Article.new(article_params)
     if @article.save
-      flash[:notice] = "Article was successfully created"
+      flash[:notice] = "記事が作成されました。"
       redirect_to article_path(@article)
     else
       render 'new'
@@ -24,9 +24,8 @@ class ArticlesController < ApplicationController
   # create action does not need a template as def new does
   
   def update
-    @article = Article.find(params[:id])
     if @article.update(article_params)
-      flash[:notice] = "Article was successfully updated"
+      flash[:notice] = "編集が完了しました。"
       redirect_to article_path(@article)
     else
       render 'edit'
@@ -35,18 +34,20 @@ class ArticlesController < ApplicationController
   
   
   def show 
-    @article = Article.find(params[:id])
   end
   
   
   def destroy
-     @article = Article.find(params[:id])
      @article.destroy
-     flash[:notice] = "Article was successfully deleted"
+     flash[:notice] = "記事が削除されました。"
      redirect_to articles_path
   end
   
   private
+    def set_article
+      @article = Article.find(params[:id])
+    end
+    
     def article_params
       params.require(:article).permit(:title, :description)
     end
