@@ -1,0 +1,43 @@
+</body><!DOCTYPE html>
+<html lang="jn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alpha-blog</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <%= stylesheet_link_tag 'main' %>
+</head>
+<body>
+    <section class="cover-main" id="home">
+        <header>
+            <nav class="nav-wrapper">
+                <div class="logo">
+                    <a href="#"><img src="https://cdn.shopifycloud.com/hatchful-web/assets/d80321286525089fe6b5a5d4759d0efd.svg" alt="logo"></a>
+
+                </div>
+                <ul class="menu">
+                    <li> <a href="#home">HOME</a></li>
+                    <li> <a href="#about"><%= link_to 'ABOUT', pages_about_path %></a></li>
+                    <li> <a href="#services"><%= link_to "ARTICLE", articles_path %></a></li>
+                </ul>
+            </nav>
+        </header>
+
+    </section>
+
+    <div class="wrapper">
+        <ul id="scene">
+            <li class="layer name"><h2>This is Yuki's home page</li>
+            <li class="layer title">the best is to learn new things endlessly</li>
+            <li class="layer comment">would you like to contact us??</li>
+            <li class="layer btn btn-main">
+                <a href="#" class="portfolio-btn">click here</a>
+                <a href="#" class="contact-btn">why us?</a>
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>
+</html>
