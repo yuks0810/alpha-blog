@@ -13,7 +13,9 @@ class ArticlesController < ApplicationController
   end
   
   def create
+  
     @article = Article.new(article_params)
+    @article.user = User.first
     if @article.save
       flash[:success] = "記事が作成されました。"
       redirect_to article_path(@article)
