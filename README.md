@@ -9,16 +9,13 @@ this is the app created using Ruby on Rials (Rails 5). What you can do is here i
 After you signed up, pull down list shows up by teh searching box. You can chose "Create New Article" to create new areticles. You can also check users, articles craeted, and also can view your own profile (you can also edit your profile and articles as well). 
 
 
-### Prerequisites
+## Prerequisites
 
 Nothing
 
-### How this is created
+## How this is created
 This is my first app. I created the app by using Rails, and deployed on Heroku (whihch is PaaS). 
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
