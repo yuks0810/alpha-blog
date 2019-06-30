@@ -21,3 +21,4 @@ This is my first app. I created the app by using Rails, and deployed on Heroku (
 
 * [Ruby on Rails](https://railstutorial.jp/) - The web framework used
 * [Heroku](https://jp.heroku.com/home) - Plattform used 
+* Bootstrup for front end
